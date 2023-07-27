@@ -116,5 +116,9 @@ const loginController = async (req, res) => {
       });
     }
   };
-  
-module.exports = {registerController , loginController}
+  // test controller
+  const testController =(req, res) => {
+    res.send({ message: "Test Controller" });
+  }
+
+module.exports = {registerController , loginController ,testController}
