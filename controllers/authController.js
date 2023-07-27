@@ -1,7 +1,6 @@
 const userModel = require("..//models/userModel");
 const{comparePassword, hashPassword} = require("../helpers/authHelper")
 
-
 const registerController = async(req ,res)=>{
     {
         try {
