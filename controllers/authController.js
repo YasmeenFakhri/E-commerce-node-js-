@@ -1,6 +1,7 @@
 const userModel = require("..//models/userModel");
 const{comparePassword, hashPassword} = require("../helpers/authHelper")
-const registerController = async(req , res)=>{
+
+const registerController = async(req ,res)=>{
     {
         try {
           const { name, email, password, phone, address, answer } = req.body;
